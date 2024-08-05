@@ -10,13 +10,13 @@ public class HeapSort {
 
     // Heapify function to maintain heap property.
     void heapify(int arr[], int n, int i) {
-        int largest = i; // Initialize largest as root
+        int largest = i; // Initialize largest as root          //arr[] = {10,9,8,7,6,5,4,3,2,1}
         int left = 2 * i + 1; // left = 2*i + 1
         int right = 2 * i + 2; // right = 2*i + 2
 
         // If left child is larger than root
         if (left < n && arr[left] > arr[largest]) {
-            largest = left;
+            largest = left; 
         }
 
         // If right child is larger than largest so far
