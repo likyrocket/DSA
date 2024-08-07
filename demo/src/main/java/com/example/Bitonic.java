@@ -15,5 +15,15 @@ public class Bitonic {
         }
         return -1;
     }
+
+    public static void main(String[] args) {
+        int n = 9;
+        int[] arr = {1, 15, 25, 45, 42, 21, 17, 12, 11};
+
+        Bitonic solution = new Bitonic();
+        int maximum = solution.findMaximum(arr, n);
+
+        System.out.println("Maximum element in the array: " + maximum);
+    }
 }
 
